@@ -1,0 +1,31 @@
+#+author: Dylan Conklin
+#+title: Number Converter
+
+* Overview
+
+This is a simple command line utility that converts numbers between bases, such as base2, base10, base8 or base16.
+
+By default, there is support for up to base16, with the number 0-9, and the letters A-F. This is arbitrary, and you can add as many different characters as you'd like to support a higher base number.
+
+* Usage
+
+The program takes 3 parameters: the original number, the original number's base, and the new number's base.
+
+So if I wanted to convert the base 2 (binary) 10101010 to base 10 (decimal), I would type:
+
+#+begin_example
+$ ./a.out 10101010 2 10
+#+end_example
+
+If I wanted to convert the base 16 (hexidecimal) number FF to base 10 (decimal), I would type:
+
+#+begin_example
+$ ./a.out FF 16 10
+#+end_example
+
+And if I wanted to convert the base 8 (octal) 76327663 to base 16 (hexidecimal), I would type:
+
+#+begin_example
+$ ./a.out 76327663 8 26
+#+end_example
+
